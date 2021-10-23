@@ -8,7 +8,7 @@ import Cards from './components/Cards.jsx';
 import Nav from './components/Nav';
 import img from './img/henry-icon.png';
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+// const API_KEY = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [cities, setCities] = useState([]);
