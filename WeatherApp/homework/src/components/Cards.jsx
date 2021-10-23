@@ -2,21 +2,18 @@ import React from 'react';
 import Card from './Card';
 import stilos from '../styles/card.module.css';
 
-export default function Cards({cities, onRemove}) {
+export default function Cards(props) {
 // acá va tu código
 // tip, podés usar un map
 return (
   <div style={{display: 'flex', flexWrap: 'wrap', }}>
     {
-    cities.map(city => (
+    props.cities.map(ciudad => (
       <div className={stilos.contenedorPrincipal}>
-        <Card 
-          key={city.id} 
-          name={city.name} 
-          min={city.min}
-          max={city.max}
-          img={city.img}
-          onClose={()=> onRemove(city.id)}/>
+        <Card key={ciudad.id} name={ciudad.name} onClose={()=> alert(ciudad.name)}
+          min={ciudad.main.temp_min}
+          max={ciudad.main.temp_max}
+          img={ciudad.weather[0].icon}/>
       </div>
       ))
       }

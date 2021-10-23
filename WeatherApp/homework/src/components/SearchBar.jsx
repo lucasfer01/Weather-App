@@ -1,21 +1,12 @@
 import React from 'react';
 import style from '../styles/searchBar.module.css';
 
-export default function SearchBar({onSearch}) {
+export default function SearchBar(props) {
 // acá va tu código
-function handleOnSearch(event) {
-  event.preventDefault();
-  if (typeof onSearch === "function") {
-    const input = document.getElementById("search-bar-input");
-    onSearch(input.value);
-    input.value = "";
-  }
-}
-
 return (
-  <form className={style.contenedorSearchBar} >
-    <input className={style.searchInput} type="text" placeholder='Buscar por ciudad...' id='search-bar-input' />
-    <input type='submit' className={style.searchBoton}  onClick={handleOnSearch}/>
-  </form>
+  <div className={style.contenedorSearchBar}>
+    <input className={style.searchInput} type="text" placeholder='Buscar por ciudad...' />
+    <button className={style.searchBoton} onClick={()=>{props.onSearch("Buscando...")}}>BUSCAR</button>
+  </div>
 )
 };
