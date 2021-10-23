@@ -16,6 +16,7 @@ return (
           min={city.min}
           max={city.max}
           img={city.img}
+          id={city.id}
           onClose={()=> onRemove(city.id)}/>
       </div>
       ))

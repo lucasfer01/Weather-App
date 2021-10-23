@@ -1,13 +1,16 @@
 import React from 'react';
 import TempCard from './tempCard';
 import stilos from '../styles/card.module.css';
+import { Link } from 'react-router-dom';
 
-export default function Card({name , onClose , min , max , img}) {
+export default function Card({name , onClose , min , max , img , id}) {
 // acá va tu código
 return (
 <div className={stilos.contenedorContenido}>
   <div className={stilos.contenedorBotonTitulo}>
-    <h2 className={stilos.contenedorCiudadTitulo}>{name}</h2>
+    <Link to={`/ciudad/${id}`}>
+      <h2 className={stilos.contenedorCiudadTitulo}>{name}</h2>
+    </Link>
     <button className={stilos.botonCerrar} onClick={onClose}>X</button>
   </div>
   <div className={stilos.contenedorTemperaturas}>

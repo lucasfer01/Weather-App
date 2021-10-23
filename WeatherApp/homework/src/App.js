@@ -7,6 +7,9 @@ import Cards from './components/Cards.jsx';
 // import { Cairns } from './data.js';
 import Nav from './components/Nav';
 import img from './img/henry-icon.png';
+import {Route} from 'react-router-dom';
+import About from './components/About';
+import Ciudad from './components/Ciudad';
 
 // const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -25,6 +28,15 @@ function App() {
         return cityId !== city.id;
       });
     });
+  }
+
+  function onFilter(ciudadId) {
+    let ciudad = cities.filter(c => c.id === parseInt(ciudadId));
+    if(ciudad.length > 0) {
+        return ciudad[0];
+    } else {
+        return null;
+    }
   }
 
   function onSearch(ciudad) {
@@ -56,8 +68,10 @@ function App() {
 
   return (
     <div className="App">
-      <Nav title='Weather App' src={img} onSearch={onSearch} />
-      <Cards cities={cities} onRemove={handleRemoveCity} />
+      <Route path='/' render={() => <Nav title='Weather App' src={img} onSearch={onSearch} />}/>
+      <Route exact path='/' render={()=><Cards cities={cities} onRemove={handleRemoveCity} />} />
+      <Route path='/about' component={About}/>
+      <Route exact path='/ciudad/:ciudadId' render={({match})=> <Ciudad city={onFilter(match.params.ciudadId)} />} />
     </div>
   );
 }
