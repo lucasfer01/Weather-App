@@ -10,4 +10,4 @@ Esta aplicacion utiliza una API pública para traer la información y es mostrad
 
 ## Screenshots
 
-<img src='./img/Readme/readme.gif' width='500px'/>
+<img src='./img/Readme/readme.gif' width='900px'/>
