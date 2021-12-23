@@ -1,0 +1,196 @@
+.contenedorContenido {
+  
+}
+
+.contenedorContenido:hover .botonCerrar {
+  display: block;
+}
+
+.sunny {
+  background-image: url('../img/cardImages/sunny-gif-2.gif');
+  /* background-size: cover; */
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.night {
+  background-image: url('../img/cardImages/clear-night.gif');
+  background-size: cover;
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.cloudy {
+  background-image: url('../img/cardImages/cloudy-day-2.gif');
+  background-size: cover;
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.cloudyNight {
+  background-image: url('../img/cardImages/cloudy-gif.gif');
+  /* background-size: cover; */
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.rainy {
+  background-image: url('../img/cardImages/rainy-day.gif');
+  background-size: cover;
+  background-position: center;
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.rainyNight {
+  background-image: url('../img/cardImages/rain-gif.gif');
+  background-size: cover;
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.thunder {
+  background-image: url('../img/cardImages/thunder-day.gif');
+  background-size: cover;
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.thunderNight {
+  background-image: url('../img/cardImages/thunder.gif');
+  /* background-size: cover; */
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.snowy {
+  background-image: url('../img/cardImages/snowy-gif.gif');
+  /* background-size: cover; */
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.snowyNight {
+  background-image: url('../img/cardImages/snowy-gif-night.gif');
+  background-size: cover;
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.foggy {
+  background-image: url('../img/cardImages/fog.gif');
+  background-size: cover;
+  width: 10rem;
+  height: 25rem;
+  border-radius: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.contenedorCiudadTitulo {
+  color: #fff;
+  text-shadow: 1px  0px 2px black,
+               0px  1px 2px black,
+              -1px  0px 2px black,
+               0px -1px 2px black;
+  padding-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 2rem 15px 15px 15px;
+}
+
+.contenedorTemperaturas {
+  margin: 3rem auto;
+  width: 50%;
+  /* height: 50%; */
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedorBotonTitulo {
+  position: relative;
+}
+
+.botonCerrar {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  background-color: #f52f2f;
+  border-radius: 10px;
+  color: rgb(218, 214, 214);
+  /* outline: none; */
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  transition: all .3s;
+  font-size: 1em;
+}
+
+.botonCerrar:focus {
+  outline: none;
+}
+
+.botonCerrar:hover {
+  /* background-color: #f37a7a; */
+  transform: scale(1.2);
+}
+
+.img {
+  width: 100px;
+}
+
+.temperaturaActual {
+    padding-top: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.925);
+}
+
+.temperaturaActual span {
+    font-size: 2rem;
+    position: absolute;
+}
+
+.contenedorImgClima {
+  /* background-color: black; */
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
